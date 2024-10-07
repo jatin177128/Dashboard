@@ -1,7 +1,7 @@
 import React from 'react';
 import { cn } from "@/lib/utils";  
-import { Button } from "@/components/ui/button";  // Ensure the button component is correctly imported
-import { ScrollArea } from "@/components/ui/scroll-area";  // Ensure the scroll-area component is correctly imported
+import { Button } from "@/components/ui/button";  
+import { ScrollArea } from "@/components/ui/scroll-area"; 
 import { motion } from 'framer-motion';
 import {
   LayoutDashboard,
@@ -13,8 +13,7 @@ import {
   FileText,
   MessageSquare,
   TrendingUp,
-} from 'lucide-react';  // Ensure lucide-react icons are installed
-
+} from 'lucide-react';  
 const Sidebar = ({ isOpen, isMobileOpen, onMobileClose, onToggle }) => {
   const SidebarItem = ({ icon: Icon, label, notification, color }) => (
     <motion.div whileHover={{ x: 5 }} whileTap={{ scale: 0.95 }}>
